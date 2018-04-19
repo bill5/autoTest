@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suitename">
+    <!--运行所有测试-->
+    <test name="runAll">
+        <classes>
+            <class name="cn.bill.group.GroupsOnClass1"></class>
+            <class name="cn.bill.group.GroupsOnClass2"></class>
+            <class name="cn.bill.group.GroupsOnClass3"></class>
+        </classes>
+    </test>
+
+    <!--运行指定class类组测试-->
+    <test name="onlyRunStu">
+
+        <groups>
+            <!--指定组-->
+            <run>
+                <include name="stu"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="cn.bill.group.GroupsOnClass1"></class>
+            <class name="cn.bill.group.GroupsOnClass2"></class>
+            <class name="cn.bill.group.GroupsOnClass3"></class>
+        </classes>
+    </test>
+
+</suite>

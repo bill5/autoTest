@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test">
+    <test name="login">
+        <classes>
+            <class name="cn.bill.suite.SuiteConfig"></class>
+            <class name="cn.bill.suite.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="cn.bill.suite.SuiteConfig"></class>
+            <class name="cn.bill.suite.PayTest"></class>
+        </classes>
+    </test>
+</suite>
