@@ -1,0 +1,7 @@
+运行命令：
+java -jar moco-runner-<version>-standalone.jar http -p 12306 -c <test.json 配置文件>
+
+如：
+java -jar ./moco-runner-0.12.0-standalone.jar http -p 8888 -c test.json
+
+java -jar ./moco-runner-0.12.0-standalone.jar http -p 8888 -c testGet.json

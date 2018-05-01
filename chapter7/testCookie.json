@@ -1,0 +1,49 @@
+[
+  {
+    "description": "这是第一个带cookie信息的get请求",
+    "request": {
+        "uri": "/test5",
+        "method": "get",
+        "cookies": {
+            "login": "true"
+        }
+    },
+    "response":{
+        "text": "这是第一个带cookie信息的get请求"
+    }
+  },
+  {
+    "description": "这是第一个带cookie信息的post请求",
+    "request": {
+      "uri": "/test6",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+          "name": "lijian",
+          "age": "10"
+      }
+    },
+    "response":{
+        "status": 200,
+        "json": {
+            "lijian": "10",
+            "status": "1"
+        }
+    }
+  },
+  {
+    "description": "这是第一个返回cookie信息的get请求",
+    "request":{
+      "uri": "/test7",
+      "method": "get"
+    },
+    "response": {
+        "cookies": {
+            "login": "true"
+        },
+      "text": "这是第一个返回cookie信息的get请求"
+    }
+  }
+]

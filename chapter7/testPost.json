@@ -1,0 +1,26 @@
+[
+  {
+    "description": "模拟一个没有参数的Post请求",
+    "request": {
+        "uri": "/test3",
+        "method": "post"
+    },
+    "response": {
+        "text": "第一个没有参数的post请求"
+    }
+  },
+  {
+    "description": "模拟一个有参数的Post请求",
+    "request": {
+      "uri": "/test4",
+      "method": "post",
+      "forms": {
+          "name": "lijian",
+          "age": "10"
+      }
+    },
+    "response": {
+      "text": "第一个有参数的post请求"
+    }
+  }
+]

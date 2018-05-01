@@ -1,0 +1,26 @@
+[
+  {
+    "description": "模拟一个没有参数的GET请求，访问方式 http://ip:port/test1",
+    "request": {
+        "uri": "/test1",
+        "method": "get"
+    },
+    "response": {
+        "text": "第一个没有参数的GET请求"
+    }
+  },
+  {
+    "description": "模拟一个有参数的GET请求，访问方式 http://ip:port/test2?name=lijian&age=25",
+    "request": {
+      "uri": "/test2",
+      "method": "get",
+      "queries": {
+        "name": "lijian",
+        "age": "25"
+      }
+    },
+    "response": {
+      "text": "第一个有参数的GET请求"
+    }
+  }
+]

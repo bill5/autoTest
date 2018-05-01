@@ -1,0 +1,27 @@
+[
+  {
+    "description": "这是第一个重定向互联网",
+    "request": {
+        "uri": "/test8"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "这是第一个重定向自己网站",
+    "request": {
+      "uri": "/test9"
+    },
+    "redirectTo": "/test10"
+  },
+  {
+    "description": "这是第一个重定向自己网站",
+    "request": {
+      "uri": "/test10"
+    },
+    "response": {
+        "json": {
+            "lijian": "10"
+        }
+    }
+  }
+]
